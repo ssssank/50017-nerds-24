@@ -15,7 +15,7 @@
       <ul class="site-navigation">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
+        <li class="current-page"><a href="catalog.html">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
@@ -36,7 +36,7 @@
       <h2 class="visually-hidden">Наши шаблоны</h2>
       <ul class="templates-list">
         <li class="templates-item">
-          <img src="img/catalog/img-sedona.jpg"" alt="Изображение шаблона Sedona">
+          <img src="img/catalog/img-sedona.jpg"" alt=" Изображение шаблона Sedona">
           <div class="template-item-info">
             <h3 class="template-item-name"><a href="#">Sedona</a></h3>
             <p>Информационный сайт для туристов</p>
@@ -99,5 +99,29 @@
     </div>
   </footer>
 </body>
+<div class="popup-write-us">
+  <h2 class="write-us-header">Напишите нам</h2>
+  <form action="#">
+    <div class="write-us-name">
+      <label>
+        Ваше имя:
+        <input type="text" name="name" placeholder="Имя Фамилия">
+      </label>
+    </div>
+    <div class="write-us-email">
+      <label>
+        Ваш e-mail:
+        <input type="email" name="name" placeholder="email@example.com">
+      </label>
+    </div>
+    <div class="write-us-email-text">
+      <label>
+        Текст письма:
+        <textarea name="email-text" placeholder="В свободной форме"></textarea>
+      </label>
+    </div>
+    <input type="submit" value="Отправить">
+  </form>
+</div>
 
 </html>
