@@ -6,8 +6,8 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: black;
-  background-color: white;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 a {
@@ -30,12 +30,11 @@ a {
 
 .site-navigation a,
 .user-navigation a {
-  color: black;
+  color: #000000;
 }
 
 .site-navigation a:hover,
-.user-navigation a:hover
-{
+.user-navigation a:hover {
   color: #fb565a;
 }
 
@@ -55,13 +54,13 @@ a {
 .services-item h3 {
   font-size: 24px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 .services-item a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -113,12 +112,12 @@ a {
 }
 
 .social-button {
-  color: black;
+  color: #000000;
   background-color: #e1e1e1;
 }
 
 .social-button:hover {
-  color: white;
+  color: #ffffff;
   background-color: #e74246;
 }
 
@@ -134,7 +133,7 @@ a {
 .footer-info-friends {
   font-size: 36px;
   line-height: 36px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .footer-info-offer {
@@ -155,11 +154,11 @@ a {
   list-style: none;
 }
 
-h3.template-item-name a{
+.template-item-name a {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  color: black;
+  color: #000000;
 }
 
 .template-item-info p {
@@ -170,7 +169,7 @@ h3.template-item-name a{
 .template-item-price {
   font-size: 16px;
   line-height: 18px;
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
   background-color: #fb565a;
 }
