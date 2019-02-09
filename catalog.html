@@ -1,131 +1,184 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Нёрдс</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalise.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalise.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <body>
+    <header class="site-header">
+      <nav class="main-navigation">
+        <a href="index.html" class="main-site-logo"
+          ><img
+            src="img/nerds-logo.svg"
+            width="160"
+            height="65"
+            alt="Логотип веб-студии Нёрдс"
+        /></a>
 
-<body>
+        <ul class="site-navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li class="current-page"><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <header class="site-header">
-    <nav class="main-navigation">
-      <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип веб-студии Нёрдс"></a>
+    <main class="container">
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
+      <div class="catalog-column">
+        <section class="filters">
+          <h2 class="visually-hidden">Фильтр шаблонов</h2>
+          <!-- Здесь будет форма -->
+        </section>
 
-      <ul class="site-navigation">
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li class="current-page"><a href="catalog.html">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
+        <section class="templates">
+          <h2 class="visually-hidden">Наши шаблоны</h2>
+          <ul class="templates-list">
+            <li class="templates-item">
+              <img
+                src="img/catalog/img-sedona.jpg"
+                alt=" Изображение шаблона Sedona"
+              />
+              <div class="template-item-info">
+                <h3 class="template-item-name"><a href="#">Sedona</a></h3>
+                <p>Информационный сайт для туристов</p>
+                <a href="#" class="template-item-price">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="templates-item">
+              <img
+                src="img/catalog/img-pink.jpg"
+                width="360"
+                height="576"
+                alt="Изображение шаблона приложения Pink"
+              />
+              <div class="template-item-info">
+                <h3 class="template-item-name"><a href="#">Pink App</a></h3>
+                <p>Продуктовый лендинг приложения для iOS и Android</p>
+                <a href="#" class="template-item-price">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="templates-item">
+              <img
+                src="img/catalog/img-barbershop.jpg"
+                width="360"
+                height="576"
+                alt="Изображение шаблона сайта Barbershop"
+              />
+              <div class="template-item-info">
+                <h3 class="template-item-name"><a href="#">Barbershop</a></h3>
+                <p>Сайт салона красоты. Для мужчин, да.</p>
+                <a href="#" class="template-item-price">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="templates-item">
+              <img
+                src="img/catalog/img-mishka.jpg"
+                width="360"
+                height="576"
+                alt="Изображение шаблона сайта Mishka"
+              />
+              <div class="template-item-info">
+                <h3 class="template-item-name"><a href="#">Mishka</a></h3>
+                <p>Интернет-магазин вязаных игрушек</p>
+                <a href="#" class="template-item-price">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="templates-item">
+              <img
+                src="img/catalog/img-aplus.jpg"
+                width="360"
+                height="576"
+                alt="Изображение шаблона сайта A Plus"
+              />
+              <div class="template-item-info">
+                <h3 class="template-item-name"><a href="#">A Plus</a></h3>
+                <p>Лендинг курсов повышения квалификации</p>
+                <a href="#" class="template-item-price">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="templates-item">
+              <img
+                src="img/catalog/img-kvast.jpg"
+                width="360"
+                height="576"
+                alt="Изображение шаблона сайта КВАСТ"
+              />
+              <div class="template-item-info">
+                <h3 class="template-item-name"><a href="#">КВАСТ</a></h3>
+                <p>Промо-сайт производителя крафтового кваса</p>
+                <a href="#" class="template-item-price">9 900 руб.</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer container">
+      <ul class="social">
+        <li><a href="#" class="social-button">Вконтакте</a></li>
+        <li><a href="#" class="social-button">Facebook</a></li>
+        <li><a href="#" class="social-button">Instagram</a></li>
       </ul>
-      <ul class="user-navigation">
-        <li><a href="#">Корзина</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="container">
-    <h1 class="page-title">Магазин готовых шаблонов</h1>
-
-    <section class="filters">
-      <h2 class="visually-hidden">Фильтр шаблонов</h2>
-      <!-- Здесь будет форма -->
-    </section>
-
-    <section class="templates-list">
-      <h2 class="visually-hidden">Наши шаблоны</h2>
-      <ul class="templates-list">
-        <li class="templates-item">
-          <img src="img/catalog/img-sedona.jpg"" alt=" Изображение шаблона Sedona">
-          <div class="template-item-info">
-            <h3 class="template-item-name"><a href="#">Sedona</a></h3>
-            <p>Информационный сайт для туристов</p>
-            <a href="#" class="template-item-price">9 900 руб.</a>
-          </div>
-        </li>
-        <li class="templates-item">
-          <img src="img/catalog/img-pink.jpg" width="360" height="576" alt="Изображение шаблона приложения Pink">
-          <div class="template-item-info">
-            <h3 class="template-item-name"><a href="#">Pink App</a></h3>
-            <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <a href="#" class="template-item-price">9 900 руб.</a>
-          </div>
-        </li>
-        <li class="templates-item">
-          <img src="img/catalog/img-barbershop.jpg" width="360" height="576" alt="Изображение шаблона сайта Barbershop">
-          <div class="template-item-info">
-            <h3 class="template-item-name"><a href="#">Barbershop</a></h3>
-            <p>Сайт салона красоты. Для мужчин, да.</p>
-            <a href="#" class="template-item-price">9 900 руб.</a>
-          </div>
-        </li>
-        <li class="templates-item">
-          <img src="img/catalog/img-mishka.jpg" width="360" height="576" alt="Изображение шаблона сайта Mishka">
-          <div class="template-item-info">
-            <h3 class="template-item-name"><a href="#">Mishka</a></h3>
-            <p>Интернет-магазин вязаных игрушек</p>
-            <a href="#" class="template-item-price">9 900 руб.</a>
-          </div>
-        </li>
-        <li class="templates-item">
-          <img src="img/catalog/img-aplus.jpg" width="360" height="576" alt="Изображение шаблона сайта A Plus">
-          <div class="template-item-info">
-            <h3 class="template-item-name"><a href="#">A Plus</a></h3>
-            <p>Лендинг курсов повышения квалификации</p>
-            <a href="#" class="template-item-price">9 900 руб.</a>
-          </div>
-        </li>
-        <li class="templates-item">
-          <img src="img/catalog/img-kvast.jpg" width="360" height="576" alt="Изображение шаблона сайта КВАСТ">
-          <div class="template-item-info">
-            <h3 class="template-item-name"><a href="#">КВАСТ</a></h3>
-            <p>Промо-сайт производителя крафтового кваса</p>
-            <a href="#" class="template-item-price">9 900 руб.</a>
-          </div>
-        </li>
-      </ul>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <ul class="social">
-      <li><a href="#" class="social-button">Вконтакте</a></li>
-      <li><a href="#" class="social-button">Facebook</a></li>
-      <li><a href="#" class="social-button">Instagram</a></li>
-    </ul>
-    <div class="footer-info">
-      <p class="footer-info-friends">Давайте дружить, это выгодно!</p>
-      <p class="footer-info-offer">Скидка 10% для друзей из социальных сетей.</p>
-    </div>
-  </footer>
-</body>
-<div class="popup-write-us">
+      <div class="footer-info">
+        <p class="footer-info-friends">Давайте дружить, это выгодно!</p>
+        <p class="footer-info-offer">
+          Скидка 10% для друзей из социальных сетей.
+        </p>
+      </div>
+    </footer>
+  </body>
+  <div class="popup-write-us">
     <h2 class="write-us-header">Напишите нам</h2>
     <form action="#" method="post" name="write-us" class="write-us-form">
       <div class="write-us-input">
         <label>
           Ваше имя:
-          <input type="text" name="name" placeholder="Имя Фамилия" minlength="3" required>
+          <input
+            type="text"
+            name="name"
+            placeholder="Имя Фамилия"
+            minlength="3"
+            required
+          />
         </label>
       </div>
       <div class="write-us-input">
         <label>
           Ваш e-mail:
-          <input type="email" name="email" placeholder="email@example.com" required>
+          <input
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+            required
+          />
         </label>
       </div>
       <div class="write-us-input write-us-input-wide">
         <label>
           Текст письма:
-          <textarea name="email-text" placeholder="В свободной форме" minlength="10" required></textarea>
+          <textarea
+            name="email-text"
+            placeholder="В свободной форме"
+            minlength="10"
+            required
+          ></textarea>
         </label>
       </div>
       <button type="submit">Отправить</button>
       <button name="popup-close" type="button">x</button>
     </form>
   </div>
-
 </html>
