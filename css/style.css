@@ -1,4 +1,15 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 body {
+  min-width: 1440px;
   margin: 0;
   padding: 0;
 
@@ -15,7 +26,6 @@ a {
 }
 
 .site-header {
-  width: auto;
   padding-bottom: 18px;
   background-color: #efefef;
 }
@@ -23,13 +33,10 @@ a {
 .main-site-logo {
   width: 160px;
   height: 65px;
-  margin-top: 49px;
 }
 
 .main-navigation {
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0 140px;
+  padding-top: 49px;
   display: flex;
   justify-content: space-between;
 
@@ -41,14 +48,26 @@ a {
 
 .site-navigation,
 .user-navigation {
-  margin-top: 83px;
+  margin: 0;
+  padding-top: 25px;
   list-style: none;
 }
 
 .site-navigation {
-  width: 438px;
+  min-width: 560px;
   display: flex;
-  justify-content: space-between;
+}
+
+.site-navigation li:nth-child(1) {
+  margin-right: 47px;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: 48px;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-right: 45px;
 }
 
 .site-navigation a,
@@ -69,7 +88,6 @@ a {
 .container {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 140px;
 }
 
 .services {
@@ -200,6 +218,8 @@ a {
 }
 
 .footer-info-offer {
+  margin: 0;
+  padding-bottom: 76px;
   line-height: 22px;
 }
 
