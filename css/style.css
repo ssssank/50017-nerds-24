@@ -86,7 +86,9 @@ a {
 }
 
 .container {
-  width: 1160px;
+  width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
 }
 
@@ -98,13 +100,14 @@ a {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 
   list-style: none;
 }
 
 .services-item {
   width: 300px;
+  margin-right: 100px;
   text-align: left;
 }
 
@@ -170,6 +173,7 @@ a {
 
 .site-footer {
   margin-top: 78px;
+  padding-bottom: 76px;
   display: flex;
 }
 
@@ -177,6 +181,7 @@ a {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
 
   list-style: none;
 }
@@ -219,7 +224,6 @@ a {
 
 .footer-info-offer {
   margin: 0;
-  padding-bottom: 76px;
   line-height: 22px;
 }
 
@@ -235,7 +239,15 @@ a {
 
 .catalog-column {
   display: flex;
-  justify-content: space-between;
+}
+
+.filters {
+  width: 261px;
+  margin-right: 140px;
+}
+
+.templates {
+  width: 760px;
 }
 
 .templates-list {
