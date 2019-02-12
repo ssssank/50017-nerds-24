@@ -1,96 +1,121 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Нёрдс</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalise.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalise.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <body>
+    <header class="site-header">
+      <nav class="main-navigation container">
+        <a href="index.html" class="main-site-logo">
+          <img
+            src="img/nerds-logo.svg"
+            width="160"
+            height="65"
+            alt="Логотип веб-студии Нёрдс"
+          />
+        </a>
 
-<body>
+        <ul class="site-navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <header class="site-header">
-    <nav class="main-navigation container">
-      <a href="index.html" class="main-site-logo"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип веб-студии Нёрдс"></a>
+    <main class="container">
+      <h1 class="visually-hidden">Веб-студия Нёрдс</h1>
+      <!-- Slider here -->
+      <section class="services">
+        <h2 class="visually-hidden">Что мы делаем</h2>
+        <ul class="services-list">
+          <li class="services-item services-item-sites">
+            <h3>Веб-сайты</h3>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a href="#" class="services-item-link">Заказать</a>
+          </li>
+          <li class="services-item services-item-apps">
+            <h3>Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a href="#" class="services-item-link">Заказать</a>
+          </li>
+          <li class="services-item services-item-ppts">
+            <h3>Презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a href="#" class="services-item-link">Заказать</a>
+          </li>
+        </ul>
+      </section>
+      <!-- About us -->
+      <!-- Partners -->
+      <!-- Contacts -->
+    </main>
 
-      <ul class="site-navigation">
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
+    <footer class="site-footer container">
+      <ul class="social">
+        <li><a href="#" class="social-button">Вконтакте</a></li>
+        <li><a href="#" class="social-button">Facebook</a></li>
+        <li><a href="#" class="social-button">Instagram</a></li>
       </ul>
-      <ul class="user-navigation">
-        <li><a href="#">Корзина</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="container">
-    <h1 class="visually-hidden">Веб-студия Нёрдс</h1>
-    <!-- Slider here -->
-    <section class="services">
-      <h2 class="visually-hidden">Что мы делаем</h2>
-      <ul class="services-list">
-        <li class="services-item services-item-sites">
-          <h3>Веб-сайты</h3>
-          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a href="#" class="services-item-link">Заказать</a>
-        </li>
-        <li class="services-item services-item-apps">
-          <h3>Приложения</h3>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a href="#" class="services-item-link">Заказать</a>
-        </li>
-        <li class="services-item services-item-ppts">
-          <h3>Презентации</h3>
-          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a href="#" class="services-item-link">Заказать</a>
-        </li>
-      </ul>
-    </section>
-    <!-- About us -->
-    <!-- Partners -->
-    <!-- Contacts -->
-  </main>
-
-  <footer class="site-footer container">
-    <ul class="social">
-      <li><a href="#" class="social-button">Вконтакте</a></li>
-      <li><a href="#" class="social-button">Facebook</a></li>
-      <li><a href="#" class="social-button">Instagram</a></li>
-    </ul>
-    <div class="footer-info">
-      <p class="footer-info-friends">Давайте дружить, это выгодно!</p>
-      <p class="footer-info-offer">Скидка 10% для друзей из социальных сетей.</p>
-    </div>
-  </footer>
-</body>
-<div class="popup-write-us">
-  <h2 class="write-us-header">Напишите нам</h2>
-  <form action="#" method="post" name="write-us" class="write-us-form">
-    <div class="write-us-input">
-      <label>
-        Ваше имя:
-        <input type="text" name="name" placeholder="Имя Фамилия" minlength="3" required>
-      </label>
-    </div>
-    <div class="write-us-input">
-      <label>
-        Ваш e-mail:
-        <input type="email" name="email" placeholder="email@example.com" required>
-      </label>
-    </div>
-    <div class="write-us-input write-us-input-wide">
-      <label>
-        Текст письма:
-        <textarea name="email-text" placeholder="В свободной форме" minlength="10" required></textarea>
-      </label>
-    </div>
-    <button type="submit">Отправить</button>
-    <button name="popup-close" type="button">x</button>
-  </form>
-</div>
-
+      <div class="footer-info">
+        <p class="footer-info-friends">Давайте дружить, это выгодно!</p>
+        <p class="footer-info-offer">
+          Скидка 10% для друзей из социальных сетей.
+        </p>
+      </div>
+    </footer>
+  </body>
+  <div class="popup-write-us">
+    <h2 class="write-us-header">Напишите нам</h2>
+    <form action="#" method="post" name="write-us" class="write-us-form">
+      <div class="write-us-input">
+        <label>
+          Ваше имя:
+          <input
+            type="text"
+            name="name"
+            placeholder="Имя Фамилия"
+            minlength="3"
+            required
+          />
+        </label>
+      </div>
+      <div class="write-us-input">
+        <label>
+          Ваш e-mail:
+          <input
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+            required
+          />
+        </label>
+      </div>
+      <div class="write-us-input write-us-input-wide">
+        <label>
+          Текст письма:
+          <textarea
+            name="email-text"
+            placeholder="В свободной форме"
+            minlength="10"
+            required
+          ></textarea>
+        </label>
+      </div>
+      <button type="submit">Отправить</button>
+      <button name="popup-close" type="button">x</button>
+    </form>
+  </div>
 </html>
