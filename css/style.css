@@ -25,6 +25,26 @@ a {
   text-decoration: none;
 }
 
+.button {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fb565a;
+}
+
+.button:hover {
+  background-color: #e74246;
+}
+
+.button:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
+}
+
 .site-header {
   padding-bottom: 18px;
   background-color: #efefef;
@@ -92,6 +112,32 @@ a {
   margin: 0 auto;
 }
 
+.slider {
+  background-color: #efefef;
+}
+
+.slider-2,
+.slider-3 {
+  display: none;
+}
+
+.slider-header {
+  margin-bottom: 28px;
+  padding: 0;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.slider-text {
+  margin: 0;
+  margin-bottom: 42px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
 .services {
   margin-top: 80px;
 }
@@ -122,20 +168,6 @@ a {
   text-transform: uppercase;
 }
 
-.services-item a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.services-item-sites a {
-  background-color: #fb565a;
-}
-
 .services-item-apps a {
   background-color: #00ca74;
 }
@@ -144,21 +176,12 @@ a {
   background-color: #efc84a;
 }
 
-.services-item-sites a:hover {
-  background-color: #e74246;
-}
-
 .services-item-apps a:hover {
   background-color: #00bc6c;
 }
 
 .services-item-ppts a:hover {
   background-color: #eab534;
-}
-
-.services-item-sites a:focus {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #d7373b;
 }
 
 .services-item-apps a:focus {
