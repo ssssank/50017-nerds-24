@@ -41,9 +41,127 @@
         <section class="filters">
           <h2 class="visually-hidden">Фильтр шаблонов</h2>
           <!-- Здесь будет форма -->
+          <form method="get" action="https://echo.htmlacademy.ru" class="filter">
+            <fieldset>
+              <legend>Стоимость:</legend>
+              <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                  </div>
+                </div>
+            </fieldset>
+            <fieldset>
+              <legend>Сетка:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input
+                    type="radio"
+                    name="grid-group"
+                    value="adaptive"
+                    id="adaptive-grid"
+                    class="visually-hidden filter-input filter-input-radio"
+                    checked
+                  />
+                  <label for="adaptive-grid">Адаптированная</label>
+                </li>
+                <li class="filter-option">
+                  <input
+                    type="radio"
+                    name="grid-group"
+                    value="fix"
+                    id="fix-grid"
+                    class="visually-hidden filter-input filter-input-radio"
+                  />
+                  <label for="fix-grid">Фиксированная</label>
+                </li>
+                <li class="filter-option">
+                  <input
+                    type="radio"
+                    name="grid-group"
+                    value="flex"
+                    id="flex-grid"
+                    class="visually-hidden filter-input filter-input-radio"
+                  />
+                  <label for="flex-grid">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input
+                    type="checkbox"
+                    class="visually-hidden filter-input filter-input-checkbox"
+                    name="slider-block"
+                    id="slider-block"
+                    checked
+                  />
+                  <label for="slider-block">Слайдер</label>
+                </li>
+                <li class="filter-option">
+                  <input
+                    type="checkbox"
+                    class="visually-hidden filter-input filter-input-checkbox"
+                    name="feature-block"
+                    id="feature-block"
+                  />
+                  <label for="feature-block">Блок преимуществ</label>
+                </li>
+                <li class="filter-option">
+                  <input
+                    type="checkbox"
+                    class="visually-hidden filter-input filter-input-checkbox"
+                    name="news-block"
+                    id="news-block"
+                    checked
+                  />
+                  <label for="news-block">Новости</label>
+                </li>
+                <li class="filter-option">
+                  <input
+                    type="checkbox"
+                    class="visually-hidden filter-input filter-input-checkbox"
+                    name="gallery-block"
+                    id="gallery-block"
+                  />
+                  <label for="gallery-block">Галерея</label>
+                </li>
+                <li class="filter-option">
+                  <input
+                    type="checkbox"
+                    class="visually-hidden filter-input filter-input-checkbox"
+                    name="cart-block"
+                    id="cart-block"
+                  />
+                  <label for="cart-block">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit" class="button form-button">Показать</button>
+          </form>
         </section>
 
         <section class="templates">
+          <div class="sorting">
+            <h2 class="visually-hidden">Сортировка шаблонов</h2>
+            <p>Сортировать:</p>
+            <ul class="sorting-list">
+              <li><a href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По названию</a></li>
+              <li><a href="#">По убыванию</a></li>
+              <li><a href="#">По возрастанию</a></li>
+            </ul>
+          </div>
           <h2 class="visually-hidden">Наши шаблоны</h2>
           <ul class="templates-list">
             <li class="templates-item">
@@ -123,6 +241,14 @@
               </div>
             </li>
           </ul>
+          <div class="breadcrumbs">
+              <ul class="breadcrumbs-list">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">Следующая</a></li>
+              </ul>
+            </div>
         </section>
       </div>
     </main>
