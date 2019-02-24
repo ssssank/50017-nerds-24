@@ -45,6 +45,22 @@ a {
   background-color: #d7373b;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .site-header {
   padding-bottom: 18px;
   background-color: #efefef;
@@ -139,7 +155,8 @@ a {
 }
 
 .services {
-  margin-top: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .services-list {
@@ -192,6 +209,80 @@ a {
 .services-item-ppts a:focus {
   color: rgba(255, 255, 255, 0.3);
   background-color: #e5a722;
+}
+
+.about-us {
+  padding-top: 80px;
+  padding-bottom: 76px;
+  display: flex;
+}
+
+.about-us-header {
+  margin: 0;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.about-us-services {
+  margin: 0;
+  margin-top: 47px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.benefits-text {
+  margin: 0;
+  margin-bottom: 49px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.benefits-table td:first-child {
+  font-size: 45px;
+  line-height: 10px;
+}
+
+.advantages {
+  width: 651px;
+  margin-right: 148px;
+}
+
+.benefits {
+  width: 360px;
+}
+
+.partners {
+  padding-top: 46px;
+  padding-bottom: 44px;
+}
+
+.partners-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partners-list li{
+  width: 209px;
+  list-style: none;
+}
+
+.contacts {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.address {
+  width: 319px;
+}
+
+.contacts .company-name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .site-footer {
@@ -269,8 +360,57 @@ a {
   margin-right: 140px;
 }
 
+.filters li {
+  list-style: none;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters legend {
+  padding-top: 60px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
 .templates {
   width: 760px;
+}
+
+.sorting {
+  padding-top: 60px;
+  padding-bottom: 59px;
+  display: flex;
+  justify-content: space-between
+}
+
+.sorting p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.sorting-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.sorting-list li {
+  margin-left: 27px;
+  list-style: none;
+}
+
+.sorting-list a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .templates-list {
@@ -315,4 +455,17 @@ a {
 .template-item-price:focus {
   background-color: #d7373b;
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+}
+
+.pagination-list li {
+  margin-right: 11px;
+  list-style: none;
 }
