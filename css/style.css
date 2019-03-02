@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  min-width: 1440px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
 
@@ -71,6 +71,10 @@ a {
   height: 65px;
 }
 
+.main-site-logo:focus {
+  opacity: 0.3;
+}
+
 .main-navigation {
   padding-top: 49px;
   display: flex;
@@ -90,7 +94,7 @@ a {
 }
 
 .site-navigation {
-  min-width: 560px;
+  min-width: 520px;
   display: flex;
 }
 
@@ -121,6 +125,23 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.user-navigation .cart {
+  padding-left: 45px;
+  position: relative;
+}
+
+.user-navigation .cart::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  background-image: url("../img/icons/icon-cart.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
 .container {
   width: 1200px;
   padding-left: 20px;
@@ -129,7 +150,67 @@ a {
 }
 
 .slider {
+  position: relative;
+}
+
+.slider-controls {
+  position: absolute;
+  min-width: 90px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  left: 50%;
+  bottom: 95px;
+  transform: translateX(-50%);
+}
+
+.slider-controls button {
+  position: relative;
+  border-radius: 50%;
+  border: none;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+  cursor: pointer;
+  background: #ffffff;
+}
+
+.slider-controls .active::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  margin: -4px;
+  background-color: #ffffff;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
+.slider {
   background-color: #efefef;
+}
+
+.slider-item {
+  padding-top: 60px;
+  padding-bottom: 92px;
+}
+
+.slider-1 {
+  background-image: url(../img/slide-1.png);
+  background-repeat: no-repeat;
+  background-position: 431px;
+}
+
+.slider-2 {
+  background-image: url(../img/slide-2.png);
+  background-repeat: no-repeat;
+  background-position: 496px;
+}
+
+.slider-3 {
+  background-image: url(../img/slide-3.png);
+  background-repeat: no-repeat;
+  background-position: 401px;
 }
 
 .slider-2,
@@ -138,7 +219,8 @@ a {
 }
 
 .slider-header {
-  margin-bottom: 28px;
+  margin: 0;
+  margin-bottom: 25px;
   padding: 0;
   font-size: 55px;
   line-height: 55px;
@@ -147,11 +229,16 @@ a {
 
 .slider-text {
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 53px;
   padding: 0;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+}
+
+.slider-button {
+  padding: 16px 54px;
+  border-radius: 3px;
 }
 
 .services {
@@ -174,7 +261,7 @@ a {
   text-align: left;
 }
 
-.services-item-ppts {
+.services-item:nth-child(3n) {
   margin-right: 60px;
 }
 
@@ -294,6 +381,7 @@ a {
 .social {
   padding: 0;
   margin: 0;
+  margin-right: 139px;
   display: flex;
   flex-wrap: wrap;
 
@@ -324,7 +412,6 @@ a {
 }
 
 .footer-info {
-  margin-left: 139px;
   text-align: left;
 }
 
