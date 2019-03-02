@@ -243,7 +243,7 @@ a {
 
 .services {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 .services-list {
@@ -256,9 +256,26 @@ a {
 }
 
 .services-item {
+  padding-top: 172px;
+  padding-bottom: 40px;
   width: 300px;
   margin-right: 100px;
   text-align: left;
+}
+
+.services-item-sites {
+  background-image: url(../img/illustration-1.png);
+  background-repeat: no-repeat;
+}
+
+.services-item-apps {
+  background-image: url(../img/illustration-2.png);
+  background-repeat: no-repeat;
+}
+
+.services-item-ppts {
+  background-image: url(../img/illustration-3.png);
+  background-repeat: no-repeat;
 }
 
 .services-item:nth-child(3n) {
@@ -266,10 +283,20 @@ a {
 }
 
 .services-item h3 {
+  margin: 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.services-item p {
+  padding-bottom: 30px;
+}
+
+.services-item-button {
+  padding: 16px 39px;
+  border-radius: 3px;
 }
 
 .services-item-apps a {
