@@ -535,7 +535,7 @@ a {
 
 .contacts {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 70px;
 }
 
 .map {
@@ -591,7 +591,6 @@ a {
 }
 
 .site-footer {
-  margin-top: 78px;
   padding-bottom: 76px;
   display: flex;
 }
@@ -615,8 +614,26 @@ a {
 }
 
 .social-button {
+  display: block;
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
   color: #000000;
   background-color: #e1e1e1;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.social-button-vk {
+  background-image: url(../img/icons/icon-vkontakte.svg);
+}
+
+.social-button-fb {
+  background-image: url(../img/icons/icon-facebook.svg);
+}
+
+.social-button-inst {
+  background-image: url(../img/icons/icon-instagram.svg);
 }
 
 .social-button:hover {
@@ -634,8 +651,8 @@ a {
 }
 
 .footer-info-friends {
-  margin-top: 0;
-  margin-bottom: 12px;
+  margin-top: 5px;
+  margin-bottom: 9px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
