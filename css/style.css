@@ -34,6 +34,7 @@ a {
   text-align: center;
   text-transform: uppercase;
   background-color: #fb565a;
+  border-radius: 3px;
 }
 
 .button:hover {
@@ -238,7 +239,6 @@ a {
 
 .slider-button {
   padding: 16px 54px;
-  border-radius: 3px;
 }
 
 .services {
@@ -296,7 +296,6 @@ a {
 
 .services-item-button {
   padding: 16px 39px;
-  border-radius: 3px;
 }
 
 .services-item-apps a {
@@ -539,15 +538,56 @@ a {
   padding-bottom: 80px;
 }
 
+.map {
+  position: relative;
+  width: 1440px;
+  height: 416px;
+  margin: 0 auto;
+  margin-top: 2px;
+  background-image: url(..//img/map.png);
+  background-repeat: no-repeat;
+}
+
 .address {
+  position: absolute;
+  top: 54px;
+  left: 140px;
   width: 319px;
+  padding-top: 49px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 47px;
+  background-color: #ffffff;
 }
 
 .contacts .company-name {
+  margin: 0;
+  padding-bottom: 22px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+.address address {
+  padding-bottom: 15px;
+  font-size: 16px;
+  line-height: 18px;
+  font-style: normal;
+}
+
+.address .telephone {
+  color: #000000;
+  text-decoration: none;
+}
+
+.address .button {
+  display: block;
+  margin-top: 35px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .site-footer {
