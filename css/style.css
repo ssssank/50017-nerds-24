@@ -433,13 +433,105 @@ a {
 }
 
 .partners-list {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
 }
 
 .partners-list li{
-  width: 209px;
+  display: block;
   list-style: none;
+}
+
+.partners-list .htmlacademy {
+  padding-top: 16px;
+  padding-left: 31px;
+  padding-right: 49px;
+}
+
+.partners-list .borodinskii {
+  padding-left: 47px;
+  padding-right: 44px;
+}
+
+.partners-list .pink {
+  padding-top: 19px;
+  padding-left: 59px;
+  padding-right: 56px;
+}
+
+.partners-list .mishka {
+  padding-top: 6px;
+  padding-left: 65px;
+}
+
+.partners-list .htmlacademy-link {
+  display: flex;
+  width: 199px;
+  height: 68px;
+  background-image: url(../img/logo-1.png);
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.partners-list .htmlacademy-link:hover {
+  opacity: 1;
+}
+
+.partners-list .htmlacademy-link:focus {
+  opacity: 0.1;
+}
+
+.partners-list .borodinskii-link {
+  display: block;
+  width: 209px;
+  height: 90px;
+  background-image: url(../img/logo-2.png);
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.partners-list .borodinskii-link:hover {
+  opacity: 1;
+}
+
+.partners-list .borodinskii-link:focus {
+  opacity: 0.1;
+}
+
+.partners-list .pink-link {
+  display: block;
+  width: 185px;
+  height: 52px;
+  background-image: url(../img/logo-3.png);
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.partners-list .pink-link:hover {
+  opacity: 1;
+}
+
+.partners-list .pink-link:focus {
+  opacity: 0.1;
+}
+
+.partners-list .mishka-link {
+  display: block;
+  width: 173px;
+  height: 84px;
+  background-image: url(../img/logo-4.png);
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.partners-list .mishka-link:hover {
+  opacity: 1;
+}
+
+.partners-list .mishka-link:focus {
+  opacity: 0.1;
 }
 
 .contacts {
