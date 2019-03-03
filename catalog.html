@@ -43,22 +43,30 @@
         <section class="filters">
           <h2 class="visually-hidden">Фильтр шаблонов</h2>
           <!-- Здесь будет форма -->
-          <form method="get" action="https://echo.htmlacademy.ru" class="filter">
+          <form
+            method="get"
+            action="https://echo.htmlacademy.ru"
+            class="filter"
+          >
             <fieldset>
               <legend>Стоимость:</legend>
               <div class="range-filter">
-                  <div class="range-controls">
-                    <div class="scale">
-                      <div class="bar"></div>
-                    </div>
-                    <div class="toggle toggle-min"></div>
-                    <div class="toggle toggle-max"></div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
                   </div>
-                  <div class="price-controls">
-                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                    <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
-                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
                 </div>
+                <div class="price-controls">
+                  <label class="min-price"
+                    >от <input name="min-price" type="text" value="0"
+                  /></label>
+                  <label class="max-price"
+                    >до <input name="max-price" type="text" value="15000"
+                  /></label>
+                </div>
+              </div>
             </fieldset>
             <fieldset>
               <legend>Сетка:</legend>
@@ -169,7 +177,9 @@
             <li class="templates-item">
               <img
                 src="img/catalog/img-sedona.jpg"
-                alt=" Изображение шаблона Sedona"
+                width="360"
+                height="576"
+                alt="Изображение шаблона Sedona"
               />
               <div class="template-item-info">
                 <h3 class="template-item-name"><a href="#">Sedona</a></h3>
@@ -257,25 +267,43 @@
       <!-- Contacts -->
       <section class="contacts">
         <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002983!2d30.320858715902784!3d59.93871916905438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1551642564719" width="1440" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002983!2d30.320858715902784!3d59.93871916905438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1551642564719"
+            width="1440"
+            height="416"
+            style="border:0"
+            allowfullscreen
+          ></iframe>
           <div class="container">
             <section class="address">
               <p class="company-name">Nёrds design studio</p>
-              <address>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</address>
-              <a href="tel:+7 (812) 275-75-75" class="telephone">тел. +7 (812) 275-75-75</a>
+              <address>
+                191186, Санкт-Петербург,<br />
+                ул. Б. Конюшенная, д. 19/8
+              </address>
+              <a href="tel:+7(812)275-75-75" class="telephone"
+                >тел. +7 (812) 275-75-75</a>
               <a href="#" class="button">Напишите нам</a>
             </section>
           </div>
         </div>
       </section>
-
     </main>
 
     <footer class="site-footer container">
       <ul class="social">
-          <li><a href="#" class="social-button social-button-vk"><span class="visually-hidden">Вконтакте</span></a></li>
-          <li><a href="#" class="social-button social-button-fb"><span class="visually-hidden">Facebook</span></a></li>
-          <li><a href="#" class="social-button social-button-inst"><span class="visually-hidden">Instagram</span></a></li>
+        <li>
+          <a href="#" class="social-button social-button-vk"
+            ><span class="visually-hidden">Вконтакте</span></a>
+        </li>
+        <li>
+          <a href="#" class="social-button social-button-fb"
+            ><span class="visually-hidden">Facebook</span></a>
+        </li>
+        <li>
+          <a href="#" class="social-button social-button-inst"
+            ><span class="visually-hidden">Instagram</span></a>
+        </li>
       </ul>
       <div class="footer-info">
         <p class="footer-info-friends">Давайте дружить, это выгодно!</p>
@@ -284,46 +312,46 @@
         </p>
       </div>
     </footer>
+    <div class="popup-write-us">
+      <h2 class="write-us-header">Напишите нам</h2>
+      <form action="#" method="post" name="write-us" class="write-us-form">
+        <div class="write-us-input">
+          <label>
+            Ваше имя:
+            <input
+              type="text"
+              name="name"
+              placeholder="Имя Фамилия"
+              minlength="3"
+              required
+            />
+          </label>
+        </div>
+        <div class="write-us-input">
+          <label>
+            Ваш e-mail:
+            <input
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+              required
+            />
+          </label>
+        </div>
+        <div class="write-us-input write-us-input-wide">
+          <label>
+            Текст письма:
+            <textarea
+              name="email-text"
+              placeholder="В свободной форме"
+              minlength="10"
+              required
+            ></textarea>
+          </label>
+        </div>
+        <button type="submit">Отправить</button>
+        <button name="popup-close" type="button">x</button>
+      </form>
+    </div>
   </body>
-  <div class="popup-write-us">
-    <h2 class="write-us-header">Напишите нам</h2>
-    <form action="#" method="post" name="write-us" class="write-us-form">
-      <div class="write-us-input">
-        <label>
-          Ваше имя:
-          <input
-            type="text"
-            name="name"
-            placeholder="Имя Фамилия"
-            minlength="3"
-            required
-          />
-        </label>
-      </div>
-      <div class="write-us-input">
-        <label>
-          Ваш e-mail:
-          <input
-            type="email"
-            name="email"
-            placeholder="email@example.com"
-            required
-          />
-        </label>
-      </div>
-      <div class="write-us-input write-us-input-wide">
-        <label>
-          Текст письма:
-          <textarea
-            name="email-text"
-            placeholder="В свободной форме"
-            minlength="10"
-            required
-          ></textarea>
-        </label>
-      </div>
-      <button type="submit">Отправить</button>
-      <button name="popup-close" type="button">x</button>
-    </form>
-  </div>
 </html>

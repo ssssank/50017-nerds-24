@@ -438,7 +438,7 @@ a {
   flex-wrap: wrap;
 }
 
-.partners-list li{
+.partners-list li {
   display: block;
   list-style: none;
 }
@@ -706,7 +706,7 @@ a {
   padding-top: 60px;
   padding-bottom: 59px;
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .sorting p {
