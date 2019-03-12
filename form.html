@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Нёрдс</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="main-navigation container">
+        <a href="index.html" class="main-site-logo">
+          <img
+            src="img/nerds-logo.svg"
+            width="160"
+            height="65"
+            alt="Логотип веб-студии Нёрдс"
+          />
+        </a>
+
+        <ul class="site-navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li><a class="cart" href="#">Корзина</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="write-us">
+        <h1 class="write-us-header">Напишите нам</h1>
+        <form action="#" method="post" name="write-us" class="write-us-form">
+          <div class="write-us-input">
+            <label>
+              Ваше имя:
+              <input
+                type="text"
+                name="name"
+                placeholder="Имя Фамилия"
+                minlength="3"
+                required
+              />
+            </label>
+          </div>
+          <div class="write-us-input">
+            <label>
+              Ваш e-mail:
+              <input
+                type="email"
+                name="email"
+                placeholder="email@example.com"
+                required
+              />
+            </label>
+          </div>
+          <div class="write-us-input write-us-input-wide">
+            <label>
+              Текст письма:
+              <textarea
+                name="email-text"
+                placeholder="В свободной форме"
+                minlength="10"
+                required
+              ></textarea>
+            </label>
+          </div>
+          <button type="submit" class="button">Отправить</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <ul class="social">
+        <li>
+          <a href="#" class="social-button social-button-vk"
+            ><span class="visually-hidden">Вконтакте</span></a>
+        </li>
+        <li>
+          <a href="#" class="social-button social-button-fb"
+            ><span class="visually-hidden">Facebook</span></a>
+        </li>
+        <li>
+          <a href="#" class="social-button social-button-inst"
+            ><span class="visually-hidden">Instagram</span></a>
+        </li>
+      </ul>
+      <div class="footer-info">
+        <p class="footer-info-friends">Давайте дружить, это выгодно!</p>
+        <p class="footer-info-offer">
+          Скидка 10% для друзей из социальных сетей.
+        </p>
+      </div>
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
