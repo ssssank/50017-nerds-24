@@ -126,7 +126,7 @@ a {
 
 .site-navigation .current-page,
 .user-navigation .current-page {
-  padding-bottom: 12px;
+  margin-bottom: 4px;
   border-bottom: #fb565a solid 2px;
 }
 
@@ -914,10 +914,19 @@ a {
   animation: shake 0.6s;
 }
 
+.page-title-wrapper {
+  width: 100%;
+  background-color: #efefef;
+}
+
 .page-title {
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 107px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  text-align: center;
 }
 
 .catalog-column {
