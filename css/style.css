@@ -512,6 +512,7 @@ a {
   position: relative;
   padding-top: 46px;
   padding-bottom: 46px;
+  margin-bottom: 20px;
 }
 
 .partners-list {
@@ -630,7 +631,7 @@ a {
 }
 
 .contacts {
-  padding-top: 80px;
+  padding-top: 60px;
   padding-bottom: 69px;
 }
 
@@ -959,18 +960,17 @@ a {
 }
 
 .sorting {
-  padding-top: 60px;
-  padding-bottom: 59px;
+  padding-top: 57px;
+  padding-bottom: 62px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 .sorting p {
   margin: 0;
+  margin-right: 239px;
+  padding-top: 3px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
@@ -983,18 +983,48 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .sorting-list li {
-  margin-left: 27px;
   list-style: none;
 }
 
 .sorting-list a {
+  margin-left: 26px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-list .direction {
+  display: block;
+  width: 11px;
+  height: 10px;
+  margin-top: 7px;
+  background-repeat: no-repeat;
+}
+
+.sorting-list .direction-asc {
+  margin-left: 18px;
+  border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid #a6a6a6;
+}
+
+.sorting-list .direction-desc {
+  margin-left: 48px;
+  border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #a6a6a6;
+}
+
+.sorting-list .active {
+  color: #000000;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
 }
 
 .templates-list {
@@ -1102,8 +1132,8 @@ a {
 .pagination-list {
   margin: 0;
   padding: 0;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 19px;
+  /* padding-bottom: 60px; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1112,6 +1142,32 @@ a {
 .pagination-list li {
   margin-right: 11px;
   list-style: none;
+}
+
+.pagination-list a {
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 21px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #eeeeee;
+  border-radius: 3px;
+}
+
+.pagination-list .active {
+  background-color: #ffffff;
+  box-shadow:inset 0px 0px 0px 3px #dbdbdb;
+}
+
+.pagination-list .prev,
+.pagination-list .next {
+  padding-left: 78px;
+  padding-right: 79px;
 }
 
 .write-us {
