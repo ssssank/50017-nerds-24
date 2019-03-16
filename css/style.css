@@ -1014,7 +1014,47 @@ a {
 }
 
 .templates-item {
+  position: relative;
   width: 360px;
+  margin-bottom: 35px;
+  padding-top: 31px;
+}
+
+.templates-item::before {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 40px;
+  top: -9px;
+  background-image: url(../img/browser.svg);
+  opacity: 0.12;
+}
+
+.templates-item:hover::before {
+  opacity: 1;
+}
+
+.template-item-info {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 360px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: center;
+  background-color: #efefef;
+}
+
+.templates-item:hover .template-item-info {
+  display: block;
+}
+
+.template-item-name {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
 }
 
 .template-item-name a {
@@ -1025,16 +1065,28 @@ a {
 }
 
 .template-item-info p {
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 30px;
   font-size: 16px;
   line-height: 18px;
+  color: #666666;
+}
+
+.template-sedona p {
+  width: 176px;
+}
+
+.template-barbershop p {
+  width: 165px;
 }
 
 .template-item-price {
-  font-size: 16px;
-  line-height: 18px;
-  color: #ffffff;
-  text-transform: uppercase;
-  background-color: #fb565a;
+  display: inline-block;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-right: 60px;
+  padding-left: 62px;
 }
 
 .template-item-price:hover {
