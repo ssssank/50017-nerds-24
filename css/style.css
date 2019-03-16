@@ -387,7 +387,7 @@ a {
 .about-us {
   position: relative;
   padding-top: 65px;
-  padding-bottom: 75px;
+  padding-bottom: 52px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -478,14 +478,8 @@ a {
 }
 
 .benefits-table tr {
-  margin-right: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  margin-right: 13px;
+  margin-bottom: 25px;
   text-align: left;
 }
 
@@ -494,11 +488,15 @@ a {
 }
 
 .benefits-table th {
+  display: block;
+  width: 105px;
   font-size: 45px;
   line-height: 10px;
 }
 
 .benefits-table td {
+  display: block;
+  width: 105px;
   padding-top: 34px;
   font-size: 16px;
   line-height: 18px;
