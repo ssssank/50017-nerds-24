@@ -1302,7 +1302,6 @@ a {
   margin: 0;
   padding: 0;
   padding-top: 19px;
-  /* padding-bottom: 60px; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1337,6 +1336,16 @@ a {
 .pagination-list .next {
   padding-left: 78px;
   padding-right: 79px;
+}
+
+.pagination-list a:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-list a:focus {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d5d5d5;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .write-us {
