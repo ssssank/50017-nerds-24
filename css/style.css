@@ -1168,6 +1168,14 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.sorting-list a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-list a:focus {
+  color: #000000;
+}
+
 .sorting-list .direction {
   display: block;
   width: 11px;
@@ -1180,20 +1188,28 @@ a {
   margin-left: 18px;
   border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
-	border-bottom: 10px solid #a6a6a6;
+  border-bottom: 10px solid #a6a6a6;
+  opacity: 0.2;
 }
 
 .sorting-list .direction-desc {
   margin-left: 48px;
   border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
-	border-top: 10px solid #a6a6a6;
+  border-top: 10px solid #a6a6a6;
+  opacity: 0.2;
+}
+
+.sorting-list .direction-asc:hover,
+.sorting-list .direction-desc:hover {
+  opacity: 1;
 }
 
 .sorting-list .active {
   color: #000000;
   border-top-color: #000000;
   border-bottom-color: #000000;
+  opacity: 1;
 }
 
 .templates-list {
