@@ -279,6 +279,7 @@ a {
 
 .slider-button {
   display: inline-block;
+  vertical-align: baseline;
   min-width: 240px;
   padding: 16px 54px;
   vertical-align: middle;
@@ -293,6 +294,7 @@ a {
 .grey-line-after::after {
   position: absolute;
   bottom: 0px;
+  left: 0;
   content: "";
   width: 1160px;
   height: 2px;
@@ -481,6 +483,7 @@ a {
 }
 
 .benefits-table tr {
+  display: block;
   margin-right: 13px;
   margin-bottom: 25px;
   text-align: left;
@@ -769,6 +772,7 @@ a {
   padding-top: 60px;
   padding-bottom: 84px;
   background-color: #ffffff;
+  -webkit-box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
 }
 
@@ -790,6 +794,7 @@ a {
 
 .write-us-input {
   display: inline-block;
+  vertical-align: baseline;
   width: 360px;
   margin-bottom: 30px;
 }
@@ -821,9 +826,22 @@ a {
 }
 
 .write-us-input :invalid:not(:placeholder-shown) {
+  -webkit-box-shadow: none;
   box-shadow: none;
   color: #e74246;
   border-color: #e74246;
+}
+
+.write-us-input ::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.write-us-input :-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.write-us-input ::-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.5);
 }
 
 .write-us-input ::placeholder {
@@ -853,6 +871,7 @@ a {
 
 .write-us-form .button {
   display: inline-block;
+  vertical-align: baseline;
   padding-left: 82px;
   padding-right: 84px;
   padding-top: 19px;
@@ -886,10 +905,12 @@ a {
 
 .popup-show {
   display: block;
+  -webkit-animation: bounce 1s;
   animation: bounce 1s;
 }
 
 .popup-error {
+  -webkit-animation: shake 0.6s;
   animation: shake 0.6s;
 }
 
@@ -917,7 +938,6 @@ a {
 .filters {
   width: 261px;
   margin-right: 140px;
-
 }
 
 .filters li {
@@ -976,6 +996,7 @@ a {
   padding: 0;
   border: 8px solid #ffffff;
   background-color: #ababab;
+  -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
   box-shadow: 0 2px 1px 0 #cfcfcf;
   border-radius: 50%;
   cursor: pointer;
@@ -990,6 +1011,8 @@ a {
 }
 
 .price-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1024,7 +1047,7 @@ a {
 }
 
 .filter-layout ul,
-.filter-features ul{
+.filter-features ul {
   margin: 0;
   padding: 0;
 }
@@ -1116,6 +1139,7 @@ a {
 .form-button:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
+  -webkit-box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
@@ -1137,7 +1161,7 @@ a {
 
 .sorting p {
   margin: 0;
-  margin-right: 239px;
+  margin-right: 238px;
   padding-top: 3px;
   font-size: 18px;
   line-height: 18px;
@@ -1151,6 +1175,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -1186,7 +1211,7 @@ a {
 .sorting-list .direction-asc {
   margin-left: 18px;
   border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
+  border-right: 5px solid transparent;
   border-bottom: 10px solid #a6a6a6;
   opacity: 0.2;
 }
@@ -1194,7 +1219,7 @@ a {
 .sorting-list .direction-desc {
   margin-left: 48px;
   border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
+  border-right: 5px solid transparent;
   border-top: 10px solid #a6a6a6;
   opacity: 0.2;
 }
@@ -1287,6 +1312,9 @@ a {
   margin: 0 auto;
   padding: 0;
   padding-bottom: 30px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 400px;
   font-size: 16px;
   line-height: 18px;
   color: #666666;
@@ -1302,6 +1330,7 @@ a {
 
 .template-item-price {
   display: inline-block;
+  vertical-align: baseline;
   padding-top: 17px;
   padding-bottom: 15px;
   padding-right: 60px;
@@ -1349,7 +1378,8 @@ a {
 
 .pagination-list .active {
   background-color: #ffffff;
-  box-shadow:inset 0px 0px 0px 3px #dbdbdb;
+  -webkit-box-shadow: inset 0px 0px 0px 3px #dbdbdb;
+  box-shadow: inset 0px 0px 0px 3px #dbdbdb;
 }
 
 .pagination-list .prev,
@@ -1366,6 +1396,7 @@ a {
 .pagination-list a:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
+  -webkit-box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
@@ -1378,6 +1409,15 @@ a {
   padding-right: 100px;
 }
 
+@-webkit-keyframes bounce {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes bounce {
   0% {
     opacity: 0;
@@ -1387,9 +1427,10 @@ a {
   }
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
   0%,
   100% {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
@@ -1398,6 +1439,7 @@ a {
   50%,
   70%,
   90% {
+    -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
 
@@ -1405,6 +1447,32 @@ a {
   40%,
   60%,
   80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
     transform: translateX(10px);
   }
 }
