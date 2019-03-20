@@ -8,13 +8,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/normalize.min.css" />
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <header class="site-header">
       <nav class="main-navigation container">
-        <a href="index.html" class="main-site-logo">
+        <a class="main-site-logo">
           <img
             src="img/nerds-logo.svg"
             width="160"
@@ -38,7 +38,6 @@
     <main>
       <h1 class="visually-hidden container">Веб-студия Нёрдс</h1>
       <!-- Slider  -->
-
       <section class="slider">
         <div class="container">
           <div class="slider-controls">
@@ -47,7 +46,7 @@
             <button></button>
           </div>
           <div class="slider-item slider-1">
-            <p class="slider-header"> Долго, дорого,<br />скрупулезно.</p>
+            <p class="slider-header">Долго, дорого,<br />скрупулезно.</p>
             <p class="slider-text">
               Математически выверенный дизайн<br />
               для вашего сайта или мобильного приложения.
@@ -57,7 +56,8 @@
           <div class="slider-item slider-2">
             <p class="slider-header">Любим математику как никто другой</p>
             <p class="slider-text">
-              Никакого креатива, только математические формулы для расчета идеальных пропорций.
+              Никакого креатива, только математические формулы для расчета
+              идеальных пропорций.
             </p>
             <a href="#" class="slider-button button">Узнать больше</a>
           </div>
@@ -71,7 +71,7 @@
           </div>
         </div>
       </section>
-
+      <!-- Services  -->
       <section class="services container grey-line-after">
         <h2 class="visually-hidden">Что мы делаем</h2>
         <ul class="services-list">
@@ -116,22 +116,19 @@
             <tr>
               <th>146<span>%</span></th>
               <td>
-                Уровень<br />
-                самоотдачи
+                Уровень самоотдачи
               </td>
             </tr>
             <tr>
               <th>100<span>%</span></th>
               <td>
-                Соблюдение<br />
-                сроков
+                Соблюдение сроков
               </td>
             </tr>
             <tr>
               <th>50<span>%</span></th>
               <td>
-                Минимальная<br />
-                предоплата
+                Минимальная предоплата
               </td>
             </tr>
           </table>
@@ -142,22 +139,44 @@
         <h2 class="visually-hidden">Партнёры</h2>
         <ul class="partners-list">
           <li class="htmlacademy">
-            <a
-              href="https://htmlacademy.ru/intensive/htmlcss"
-              class="htmlacademy-link"
-              ><img src="img/logo-1.png" alt="htmlacademy"></a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy-link">
+              <img
+                src="img/logo-1.png"
+                width="199"
+                height="68"
+                alt="htmlacademy"
+              />
+            </a>
           </li>
           <li class="borodinskii">
-            <a href="#" class="borodinskii-link"
-              ><img src="img/logo-2.png" alt="Барбершоп бородинский"></a>
+            <a href="#" class="borodinskii-link">
+              <img
+                src="img/logo-2.png"
+                width="209"
+                height="90"
+                alt="Барбершоп бородинский"
+              />
+            </a>
           </li>
           <li class="pink">
-            <a href="#" class="pink-link"
-              ><img src="img/logo-3.png" alt="Приложение Pink"></a>
+            <a href="#" class="pink-link">
+              <img
+                src="img/logo-3.png"
+                width="185"
+                height="52"
+                alt="Приложение Pink"
+              />
+            </a>
           </li>
           <li class="mishka">
-            <a href="#" class="mishka-link"
-              ><img src="img/logo-4.png" alt="Магазин Мишка"></a>
+            <a href="#" class="mishka-link">
+              <img
+                src="img/logo-4.png"
+                width="173"
+                height="84"
+                alt="Магазин Мишка"
+              />
+            </a>
           </li>
         </ul>
       </section>
@@ -167,8 +186,8 @@
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002983!2d30.320858715902784!3d59.93871916905438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1551642564719"
             style="border:0"
-            allowfullscreen
-          ></iframe>
+            allowfullscreen>
+          </iframe>
           <div class="container">
             <section class="address">
               <p class="company-name">Nёrds design studio</p>
@@ -176,7 +195,9 @@
                 191186, Санкт-Петербург,<br />
                 ул. Б. Конюшенная, д. 19/8
               </address>
-              <a href="tel:+7(812)275-75-75" class="telephone">тел. +7 (812) 275-75-75</a>
+              <a href="tel:+7(812)275-75-75" class="telephone">
+                тел. +7 (812) 275-75-75
+              </a>
               <a href="form.html" class="button write-us-link">Напишите нам</a>
             </section>
           </div>
@@ -187,16 +208,19 @@
     <footer class="site-footer container">
       <ul class="social">
         <li>
-          <a href="#" class="social-button social-button-vk"
-            ><span class="visually-hidden">Вконтакте</span></a>
+          <a href="#" class="social-button social-button-vk">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
         </li>
         <li>
-          <a href="#" class="social-button social-button-fb"
-            ><span class="visually-hidden">Facebook</span></a>
+          <a href="#" class="social-button social-button-fb">
+            <span class="visually-hidden">Facebook</span>
+          </a>
         </li>
         <li>
-          <a href="#" class="social-button social-button-inst"
-            ><span class="visually-hidden">Instagram</span></a>
+          <a href="#" class="social-button social-button-inst">
+            <span class="visually-hidden">Instagram</span>
+          </a>
         </li>
       </ul>
       <div class="footer-info">
@@ -217,7 +241,6 @@
               name="name"
               placeholder="Имя Фамилия"
               minlength="3"
-              required
             />
           </label>
         </div>
@@ -228,7 +251,6 @@
               type="email"
               name="email"
               placeholder="email@example.com"
-              required
             />
           </label>
         </div>
@@ -238,13 +260,12 @@
             <textarea
               name="email-text"
               placeholder="В свободной форме"
-              minlength="10"
-              required
-            ></textarea>
+              minlength="10">
+            </textarea>
           </label>
         </div>
         <button type="submit" class="button">Отправить</button>
-        <button class="popup-close" type="button">Закрыть</button>
+        <button type="button" class="popup-close">Закрыть</button>
       </form>
     </div>
     <script src="/js/script.min.js"></script>

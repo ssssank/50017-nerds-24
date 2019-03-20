@@ -8,7 +8,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/normalize.min.css" />
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
@@ -42,7 +42,7 @@
       <div class="catalog-column container">
         <section class="filters">
           <h2 class="visually-hidden">Фильтр шаблонов</h2>
-          <!-- Здесь будет форма -->
+          <!-- Filter form -->
           <form
             method="get"
             action="https://echo.htmlacademy.ru"
@@ -159,7 +159,7 @@
             <button type="submit" class="button form-button">Показать</button>
           </form>
         </section>
-
+        <!-- Templates with sorting -->
         <section class="templates">
           <div class="sorting">
             <h2 class="visually-hidden">Сортировка шаблонов</h2>
@@ -270,8 +270,8 @@
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002983!2d30.320858715902784!3d59.93871916905438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1551642564719"
             style="border:0"
-            allowfullscreen
-          ></iframe>
+            allowfullscreen>
+          </iframe>
           <div class="container">
             <section class="address">
               <p class="company-name">Nёrds design studio</p>
@@ -290,16 +290,19 @@
     <footer class="site-footer container">
       <ul class="social">
         <li>
-          <a href="#" class="social-button social-button-vk"
-            ><span class="visually-hidden">Вконтакте</span></a>
-        </li>
-        <li>
-          <a href="#" class="social-button social-button-fb"
-            ><span class="visually-hidden">Facebook</span></a>
-        </li>
-        <li>
-          <a href="#" class="social-button social-button-inst"
-            ><span class="visually-hidden">Instagram</span></a>
+          <a href="#" class="social-button social-button-vk">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-button social-button-fb">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-button social-button-inst">
+              <span class="visually-hidden">Instagram</span>
+            </a>
         </li>
       </ul>
       <div class="footer-info">
@@ -320,7 +323,6 @@
               name="name"
               placeholder="Имя Фамилия"
               minlength="3"
-              required
             />
           </label>
         </div>
@@ -331,7 +333,6 @@
               type="email"
               name="email"
               placeholder="email@example.com"
-              required
             />
           </label>
         </div>
@@ -341,13 +342,12 @@
             <textarea
               name="email-text"
               placeholder="В свободной форме"
-              minlength="10"
-              required
-            ></textarea>
+              minlength="10">
+            </textarea>
           </label>
         </div>
         <button type="submit" class="button">Отправить</button>
-        <button class="popup-close" type="button">Закрыть</button>
+        <button type="button" class="popup-close">Закрыть</button>
       </form>
     </div>
     <script src="/js/script.min.js"></script>
