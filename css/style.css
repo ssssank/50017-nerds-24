@@ -861,7 +861,7 @@ a {
 
 .write-us-input-wide {
   width: 760px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .write-us-input textarea {
@@ -1294,8 +1294,8 @@ a {
   position: absolute;
   bottom: 0;
   width: 360px;
-  padding-top: 25px;
-  padding-bottom: 50px;
+  padding-top: 27px;
+  padding-bottom: 48px;
   padding-left: 60px;
   padding-right: 60px;
   text-align: center;
@@ -1346,10 +1346,10 @@ a {
 .template-item-price {
   display: inline-block;
   vertical-align: baseline;
-  padding-top: 17px;
-  padding-bottom: 15px;
-  padding-right: 60px;
-  padding-left: 62px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  padding-right: 61px;
+  padding-left: 61px;
 }
 
 .template-item-price:hover {
